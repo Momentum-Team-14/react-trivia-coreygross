@@ -17,9 +17,9 @@ export const CategoryData = ({catID, setCatID}) =>{
         return (
         <div>
             <h1> Choose A Category </h1>
-            <div>
+            <div style={{marginBottom:'20px'}}>
                 {categoryList.map((category) => 
-                <div><button key={category.id} 
+                <div><button style={{borderRadius:'20px'}} key={category.id} 
                 onClick={() => {setCatID(category.id)}}>
                     {category.name}</button></div>)}
             </div>
